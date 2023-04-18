@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1f2f455.css",
+    "main.js": "/static/js/main.04589044.js",
+    "static/js/787.7e055056.chunk.js": "/static/js/787.7e055056.chunk.js",
+    "static/media/simbie_transparent_background.png": "/static/media/simbie_transparent_background.fe8f609923b91c356759.png",
+    "static/media/post_quantum.png": "/static/media/post_quantum.0d7b99d786e5c62871d4.png",
+    "static/media/network_of_blockchains.png": "/static/media/network_of_blockchains.ef91822dae2a07d05eee.png",
+    "static/media/tor.png": "/static/media/tor.289c7e5c533fabf8eb9b.png",
+    "static/media/reddit.png": "/static/media/reddit.e63a03ce61b3392a5c35.png",
+    "static/media/tenacious.png": "/static/media/tenacious.a9abd489aaef5570d684.png",
+    "static/media/github.png": "/static/media/github.44eee0c4a6c25b0d7347.png",
+    "static/media/discord.png": "/static/media/discord.5e5b4cc2711a263ff7d8.png",
+    "static/media/telegram.png": "/static/media/telegram.6d4fb402a1836d62584b.png",
+    "static/media/twitter.png": "/static/media/twitter.a0edd153afbcdb7ffc3b.png",
+    "static/media/medium.png": "/static/media/medium.d06d71a245db0137e2b2.png",
+    "static/media/mutation.png": "/static/media/mutation.67f3fee543953b6e459f.png",
+    "static/media/speed.png": "/static/media/speed.d07d2bca4397fe146709.png",
+    "static/media/decentralization.png": "/static/media/decentralization.7e08daacc53a7473203b.png",
+    "static/media/cloud.png": "/static/media/cloud.3b0b10756261c7999ab7.png",
+    "static/media/facebook.png": "/static/media/facebook.bfd1cfff9f9521198b26.png",
+    "index.html": "/index.html",
+    "main.c1f2f455.css.map": "/static/css/main.c1f2f455.css.map",
+    "main.04589044.js.map": "/static/js/main.04589044.js.map",
+    "787.7e055056.chunk.js.map": "/static/js/787.7e055056.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1f2f455.css",
+    "static/js/main.04589044.js"
+  ]
+}
