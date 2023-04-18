@@ -1,0 +1,428 @@
+:root {
+    --glitched-duration: 0.9s;
+    --glitched-long-duration: 3s;
+    --white-color: #ffff;
+    --yellow-color-opacity: #f9f00242;
+    --orange-color: #ff9800;
+    --border-color: #8ae66e;
+    --red-color: #ff003c;
+    --blue-color: #0c5f74;
+    --green-color: #298d29;
+    --purple-color: purple;
+    --neon-color: #39ff14;
+    --black-color: #000;
+  }
+  
+    
+  
+  /* Titles */
+  
+  h1.cyberpunk,
+  h2.cyberpunk,
+  h3.cyberpunk,
+  h4.cyberpunk,
+  .cyberpunk h1,
+  .cyberpunk h2,
+  .cyberpunk h3,
+  .cyberpunk h4 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  h2.cyberpunk,
+  .cyberpunk h2 {
+    font-size: 3rem;
+    line-height: 1.9rem;
+    font-weight: 300;
+  }
+  
+  h3.cyberpunk,
+  .cyberpunk h3 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+  }
+  
+  h4.cyberpunk,
+  .cyberpunk h4 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+  }
+  
+  h1.cyberpunk:before,
+  h2.cyberpunk:before,
+  h3.cyberpunk:before,
+  h4.cyberpunk:before,
+  .cyberpunk h1:before,
+  .cyberpunk h2:before,
+  .cyberpunk h3:before,
+  .cyberpunk h4:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+    width: 100%;
+    height: 10px;
+    background-color: var(--black-color);
+    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+  }
+  
+  h1.cyberpunk.glitched,
+  .cyberpunk h1.glitched {
+    animation-name: h1glitched;
+    animation-duration: calc(var(--glitched-duration) * 1.4);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  h2.cyberpunk.glitched,
+  .cyberpunk h2.glitched {
+    animation-name: h1glitched;
+    animation-duration: calc(var(--glitched-duration) * 1.7);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+  }
+  
+  h3.cyberpunk.glitched,
+  .cyberpunk h3.glitched {
+    animation-name: h1glitched;
+    animation-duration: calc(var(--glitched-duration) * 1.1);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+  }
+  
+  h4.cyberpunk.glitched,
+  .cyberpunk h4.glitched {
+    animation-name: h1glitched;
+    animation-duration: calc(var(--glitched-duration) * 2.1);
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes h1glitched {
+    0% {
+      transform: skew(-20deg);
+      left: -4px;
+    }
+    10% {
+      transform: skew(-20deg);
+      left: -4px;
+    }
+    11% {
+      transform: skew(0deg);
+      left: 2px;
+    }
+    50% {
+      transform: skew(0deg);
+    }
+    51% {
+      transform: skew(10deg);
+    }
+    59% {
+      transform: skew(10deg);
+    }
+    60% {
+      transform: skew(0deg);
+    }
+    100% {
+      transform: skew(0deg);
+    }
+  }
+  
+  h1.cyberpunk.glitched:before,
+  .cyberpunk h1.glitched:before {
+    animation-name: h1beforeglitched;
+    animation-duration: calc(var(--glitched-duration) * 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes h1beforeglitched {
+    0% {
+      transform: skew(-20deg);
+      left: -4px;
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    10% {
+      transform: skew(-20deg);
+      left: -4px;
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    11% {
+      transform: skew(0deg);
+      left: 2px;
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    50% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    51% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    59% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    60% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    100% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+  }
+  
+  h2.cyberpunk:before,
+  .cyberpunk h2:before {
+    clip-path: polygon(0px 5px, 35px 5px, 40px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 20px 10px, 15px 6px, 0px 6px);
+  }
+  
+  h2.cyberpunk.glitched:before,
+  .cyberpunk h2.glitched:before {
+    animation-name: h2beforeglitched;
+    animation-duration: calc(var(--glitched-duration) * 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes h2beforeglitched {
+    0% {
+      transform: scaleY(1);
+    }
+    10% {
+      transform: scaleY(1);
+    }
+    11% {
+      transform: scaleY(-1);
+    }
+    50% {
+      transform: scaleY(-1);
+    }
+    51% {
+      transform: scaleY(1);
+    }
+    59% {
+      transform: scaleY(1);
+    }
+    60% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  h3.cyberpunk:before,
+  .cyberpunk h3:before {
+    clip-path: polygon(0px 5px, 10px 5px, 15px 0px, 40px 0px, 45px 5px, 100% 5px, 100% 6px, 31px 6px, 27px 2px, 15px 2px, 8px 10px, 0px 10px);
+  }
+  
+  h4.cyberpunk:before,
+  .cyberpunk h4:before {
+    clip-path: polygon(0px 3px, 15px 3px, 20px 0px, 80px 0px, 85px 3px, 100% 3px, 100% 4px, 85px 4px, 80px 7px, 20px 7px, 15px 4px, 0px 4px);
+  }
+  
+  h1.cyberpunk:after,
+  h2.cyberpunk:after,
+  h3.cyberpunk:after,
+  h4.cyberpunk:after,
+  p.cyberpunk:after,
+  .cyberpunk h1:after,
+  .cyberpunk h2:after,
+  .cyberpunk h3:after,
+  .cyberpunk h4:after,
+  .cyberpunk p:after {
+    animation-name: hxafter;
+    animation-duration: var(--glitched-duration);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  h3.cyberpunk:after,
+  h4.cyberpunk:after,
+  .cyberpunk h3:after,
+  .cyberpunk h4:after {
+    animation-direction: reverse;
+    animation-duration: calc(var(--glitched-duration) / 2);
+  }
+  
+
+
+  /* Section */
+  section.cyberpunk {
+    padding: 60px 60px;
+    position: relative;
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+  section.cyberpunk:after,
+  section.cyberpunk.black:after {
+    content: " ";
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--black-color);
+    position: absolute;
+    clip-path: polygon(0% 0%, 22% 0%, calc(22% + 30px) 30px, 52% 30px, calc(52% + 15px) 15px, 70% 15px, calc(70% + 15px) 30px, 90% 30px, calc(90% + 30px) 0px, 100% 0px, 100% 30px, 0px 30px);
+  }
+  
+  section.cyberpunk.black:after {
+    background-color: var(--white-color);
+  }
+    
+  .dotted,
+  .dotted:before,
+  .dotted:after {
+    background: var(--black-color);
+    background-image: radial-gradient(var(--yellow-color-opacity) 1px, transparent 0);
+    background-size: 5px 5px;
+    background-position: -13px -3px;
+  }
+  
+  section.cyberpunk.black .dotted,
+  section.cyberpunk.black .dotted:before,
+  section.cyberpunk.black .dotted:after {
+    background: var(--white-color);
+    background-image: radial-gradient(#00000021 1px, transparent 0);
+    background-size: 5px 5px;
+    background-position: -13px -3px;
+  }
+  
+  section.cyberpunk:before,
+  section.cyberpunk.black:before {
+    content: " ";
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--white-color);
+    position: absolute;
+    clip-path: polygon(calc(22% + 28px) -1px, calc(22% + 45px) 15px, 34% 15px, calc(34% + 15px) -1px, 70% 0px)
+  }
+
+  #what_is_section:before{
+
+    background-color: transparent;
+
+  }
+
+  
+  section.cyberpunk:nth-child(even):after,
+  section.cyberpunk:nth-child(odd):before {
+   transform: scaleX(-1);
+  }
+  
+  section.cyberpunk.black h1,
+  section.cyberpunk.black h2,
+  section.cyberpunk.black h3,
+  section.cyberpunk.black h4 {
+    color: var(--white-color);
+  }
+  
+  section.cyberpunk.black h1:before,
+  section.cyberpunk.black h2:before,
+  section.cyberpunk.black h3:before,
+  section.cyberpunk.black h4:before,
+  section.cyberpunk.black hr {
+    background-color: var(--white-color);
+  }
+  
+  section.cyberpunk.black img.cyberpunk,
+  section.cyberpunk.black img {
+    background-color: var(--white-color);
+  }
+  
+  section.cyberpunk.black textarea.cyberpunk,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black select.cyberpunk,
+  section.cyberpunk.black textarea.cyberpunk,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black,
+  section.cyberpunk.black select {
+    border-color: var(--white-color);
+    background-color: var(--black-color);
+    color: var(--white-color); 
+  }
+  
+  section.cyberpunk.black input[type="time"]::-webkit-calendar-picker-indicator,
+  section.cyberpunk.black input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(82%) sepia(91%) saturate(803%) hue-rotate(352deg) brightness(107%) contrast(104%);
+  }
+  
+  section.cyberpunk.black input[type="radio"].cyberpunk,
+  section.cyberpunk.black input[type="radio"] {
+    background-color: var(--white-color); 
+  }
+  
+  section.cyberpunk.black input[type="radio"].cyberpunk:after,
+  section.cyberpunk.black input[type="radio"]:after {
+    background-color:  var(--black-color);
+  }
+  
+  section.cyberpunk.black input[type="radio"].cyberpunk:checked:after,
+  section.cyberpunk.black input[type="radio"]:checked:after  {
+    background-color: var(--red-color);
+  }
+  
+  section.cyberpunk.black input[type="checkbox"].cyberpunk:checked:before,
+  section.cyberpunk.black input[type="checkbox"]:checked:before {
+    border-color: var(--red-color);
+    border-top-color: transparent;
+  }
+  
+  section.cyberpunk.black input[type="checkbox"].cyberpunk:checked:after,
+  section.cyberpunk.black input[type="checkbox"]:checked:after {
+    background-color: var(--red-color);
+  }
+  
+  section.cyberpunk.black p.cyberpunk,
+  section.cyberpunk.black p {
+    border: 30px solid var(--white-color);
+    border-right: 5px solid var(--white-color);
+    border-left: 5px solid var(--white-color);
+    border-bottom: 24px solid var(--white-color);
+    background-color: var(--black-color);
+  }
+  
+  section.cyberpunk.black p.cyberpunk.inverse,
+  section.cyberpunk.black p.inverse {
+    border: none;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-right: 2px solid var(--border-color);
+  }
+  
+  section.cyberpunk.black ul.cyberpunk > li:before,
+  section.cyberpunk.black ul > li:before:not(ul.steps li:before) {
+    background-color: var(--white-color);
+  }
+  
+  section.cyberpunk.black ol.cyberpunk li:before,
+  section.cyberpunk.black ol > li:before {
+    color: var(--black-color);
+    background-color: var(--white-color);
+  }
