@@ -1,5 +1,5 @@
 import simbie from '../assets/simbie_transparent_background.png'
-import '../styles/for_image.css'
+import '../styles/mascot.css'
 
 
 //_____________________ Images for "WHAT IS" blocks _____________________

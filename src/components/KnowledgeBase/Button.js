@@ -1,23 +1,18 @@
-import styles from '../../styles/for_button.css';
+import '../../styles/explore_button.scss'
 
 
 const KnowledgeBaseButton = () => {
 
     return (
 
-            <a href="https://mastering.klyntar.org" target="_blank" rel="noopener noreferrer">
 
-                <button className="cybrBtn">
+        <a href="https://mastering.klyntar.org" target="_blank" rel="noopener noreferrer">
 
-
-                Explore
+            <button class="kave-btn">
+                <span class="kave-line"></span>Explore
+            </button>
             
-                <span aria-hidden className="cybrBtn__glitch">Now!</span>
-                <span aria-hidden className="cybrBtn__tag">KLY</span>
-
-                </button>
-
-            </a>
+        </a>
 
     );
 

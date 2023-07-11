@@ -1,4 +1,4 @@
-import '../../styles/for_stats_cards.scss'
+import '../../styles/stats_cards.scss'
 
 
 const Card = props => {

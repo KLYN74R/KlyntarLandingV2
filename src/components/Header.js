@@ -3,7 +3,7 @@ import SocialsWidgets from './SocialsWidgets'
 import Marquee from "react-fast-marquee"
 
 //Styles
-import '../styles/for_arrows.scss'
+import '../styles/arrows.scss'
 import '../styles/cyber.scss'
 
 import {Component} from 'react'

@@ -1,4 +1,4 @@
-import '../../styles/for_kb_cards.scss'
+import '../../styles/knowledge_base_cards.scss'
 
 
 const Card = props => {

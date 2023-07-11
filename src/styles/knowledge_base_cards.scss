@@ -14,13 +14,25 @@
   display: block;
   position: relative;
   max-width: 262px;
-  background-color: rgb(151, 255, 255);
-  border-radius: 40px;
-   padding: 32px 24px;
+  border: solid 1px rgba(221, 30, 30, 0.3);
+  background-color: rgb(255, 64, 64);
+  padding: 32px 24px;
   margin: 12px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 70%;
+    width: 60px;
+    height: 1px;
+    transform: translateY(1px);
+    background: rgb(0, 0, 0);
+    transition: all 0.25s ease;
+  }
 
   &:before {
     content: "";
@@ -31,7 +43,7 @@
     background: #000000;
     height: 50px;
     width: 50px;
-    border-radius: 32px;
+    border-radius: 50px;
     transform: scale(1);
     transform-origin: 50% 50%;
     transition: transform 0.25s ease-out;
@@ -49,6 +61,6 @@
   }
   h3 {
     transition: all 0.3s ease-out;
-    color: #ffffff;
+    color: rgb(255,0,0);
   }
 }

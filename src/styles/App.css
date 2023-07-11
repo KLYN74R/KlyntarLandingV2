@@ -6,29 +6,6 @@
 }
 
 
-::-webkit-scrollbar {
-
-  background-color: #000;
-  width: 12px;
-
-}
-
-/* ::-webkit-scrollbar-track {
-
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-  
-} */
-
-::-webkit-scrollbar-thumb {
-
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #000000), color-stop(1, aqua));
-  
-  border-radius: 10px;
-}
-
-
-
 ::-moz-selection { /* Code for Firefox */
   background: #e73838;
 }
@@ -145,8 +122,9 @@ hr {
 
   /* border: 2px black solid; */
   font-size: 13px;
+  
+  font-family: Helvetica Monospaced, sans-serif;
 
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 5%;
 
 }
@@ -347,7 +325,7 @@ hr {
 
 #still-in-dev-container p,#still-in-dev-container h2{
 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Helvetica Monospaced, sans-serif;
   
 }
 
@@ -366,6 +344,8 @@ footer{
   padding-top:10px;
   padding-bottom: 10px;
 
+  background: url(../assets/footer_background.jpg);
+  background-size: cover;
 
 }
 
