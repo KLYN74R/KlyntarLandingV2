@@ -41,6 +41,7 @@
       transition: all 0.25s ease;
     }
     &:hover {
+      cursor: pointer;
       box-shadow: 3px 3px rgb(255,0,0);
       color: rgb(0, 0, 0);
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
